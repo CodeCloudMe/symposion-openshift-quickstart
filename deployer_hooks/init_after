@@ -1,0 +1,16 @@
+#!/bin/bash
+REQUIREMENTS=requirements.txt
+PYVERSION=Python2.7
+STATIC_URL=/static/
+DJANGO_SETTINGS=osquickstart.settings
+ADMIN_PASSWORD=testtest
+PROVIDER=openshift
+APPLICATION_NAME=symposiontest
+MANAGEPY=./manage.py
+SECRET_KEY="nvspuj8#ujk#$%8rmy8m-dse(e_3*3!^6(#3#u2r4pd6gecmf6"
+MEDIA_URL=/media/
+
+sh deployer_scripts/setgiturl.sh $APPLICATION_NAME
+chmod a+x .openshift/action_hooks/*
+
+echo "$0 has been executed!"

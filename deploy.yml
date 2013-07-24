@@ -1,0 +1,10 @@
+admin_password: testtest
+application_name: symposiontest
+django_settings: osquickstart.settings
+managepy: ./manage.py
+media_url: /media/
+provider: openshift
+pyversion: Python2.7
+requirements: requirements.txt
+secret_key: '"nvspuj8#ujk#$%8rmy8m-dse(e_3*3!^6(#3#u2r4pd6gecmf6"'
+static_url: /static/
